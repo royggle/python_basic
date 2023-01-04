@@ -1,7 +1,27 @@
 # This is an assignment for nomad code challenge. I submitted on replit
 
 # Write your code here:
+def get_yearly_revenue(monthly_revenue):
+    revenue_for_a_year = monthly_revenue * 12
+    return revenue_for_a_year
 
+
+def get_yearly_expenses(monthly_expense):
+    expense_for_a_year = monthly_expense * 12
+    return expense_for_a_year
+
+
+def get_tax_amount(profit):
+    if profit > 100000:
+        tax_amount = profit * 0.25
+    else:
+        tax_amount = profit * 0.15
+    return tax_amount
+
+
+def apply_tax_credits(tax_amount, tax_credits):
+    amount_to_discount = tax_amount * tax_credits
+    return amount_to_discount
 
 
 # Don't touch anthing below this line 🙅🏻‍♂️🙅🏻‍♀️
